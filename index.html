@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .footer-bg {
+        height: fit-content !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('png/footer.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .product {
+        background: hsla(0, 0%, 0%, 0.389);
+    }
+
+    .product-item {
+        height: 29vh;
+    }
+
+    .product-thing {
+        height: 25vh;
+        width: 20vh;
+        border-radius: 10px;
+    }
+
+    .product-thing:hover {
+        background-color: hsla(0, 0%, 14%, 0.389);
+        transition: 0.3s;
+    }
+
+    .product-control {
+        background-color: hsla(77, 77%, 77%, 0.1);
+    }
+
+    .detail {
+        height: 100vh;
+        background-image: url(png/vgtyffptbuqntibf-0_0_desktop_0_1X.jpg);
+    }
+
+    .detail-content {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .learn-more {
+        background-image: url(png/info-bg.webp);
+    }
+</style>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/png/asus_logo.882bb74.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button style="border: none; background-color: transparent;" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- CAROSEUL -->
+    <div class="container-fluid gx-0">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="png/nfkbbu0tylxptkgx-0_0_desktop_0_1X.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="png/jxtpai5ngflepic1-0_0_desktop_0_1X.webp" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-50 translate-middle d-none d-md-block">
+                        <br>
+                        <h1 style="margin-top: 175px; font-size: 50px;">ASUS Business</h1>
+                        <p class="text-center" style="font-size: 20px;">Exelence for your achievement</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- END CAROSEUL -->
+
+    <!-- PRODUCT -->
+    <div id="carouselExample" class="carousel slide product">
+        <div class="carousel-inner">
+            <div class="carousel-item active product-item">
+                <div
+                    class="d-block-100 w-100 d-flex justify-content-around position-absolute top-50 start-50 translate-middle">
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-1.png" alt="" class="product-img">
+                        <h6 class="mt-3">Laptops</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-4.png" alt="" class="product-img">
+                        <h6 class="mt-3">Desktops</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-3.svg" alt="" class="product-img">
+                        <h6 class="mt-3">NUCs</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-2.png" alt="" class="product-img">
+                        <h6 class="mt-3">Monitors</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-5&6.png" al class="product-img"t="">
+                        <h6 class="mt-3">Projector</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-5&6.png" al class="product-img"t="">
+                        <h6 class="mt-3">Server & Workstation</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-1 p-7.png" alt="" class="product-img">
+                        <h6 class="mt-3">Motherboards</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item product-item">
+                <div
+                    class="d-block-100 w-100 d-flex justify-content-around position-absolute top-50 start-50 translate-middle">
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-1.png" alt="" class="product-img">
+                        <h6 class="mt-3">Graphics Card</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-2.png" alt="" class="product-img">
+                        <h6 class="mt-3">Alot & Industrial</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-3.png" alt="" class="product-img">
+                        <h6 class="mt-3">Networking</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-4.png" alt="" class="product-img">
+                        <h6 class="mt-3">Cases & Optical Drives</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-5.png" alt="" class="product-img">
+                        <h6 class="mt-3">Wearables & Healthcare</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-6.png" alt="" class="product-img">
+                        <h6 class="mt-3">Intelligent Robots</h6>
+                    </a>
+                    <a href="" class="text-center text-light text-decoration-none product-thing">
+                        <img src="png/produk c-2 p-7.png" alt="" class="product-img">
+                        <h6 class="mt-3">Accessories</h6>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev product-control" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="prev" style="width: 30px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next product-control" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="next" style="width: 30px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- END PRODUCT -->
+
+    <!-- DETAIL -->
+    <div class="container-fluid gx-0">
+        <div class="detail">
+            <div class="detail-content text-light">
+                <h1 class="text-center" style="font-size: 55px;">
+                    Your Trusted Partner
+                </h1>
+                <div class="col-6">
+                    <p class="mb-5 mt-4 text-center" style="font-size: 25px;">Di ASUS Business, kami berfokus pada
+                        pemahaman pelanggan kami. Teknologi, inovasi, kemitraan, dan praktik
+                        terbaik kami yang terdepan di dunia menempatkan kami secara unik untuk membantu organisasi
+                        membuat
+                        pilihan
+                        yang tepat — siap untuk kesuksesan bisnis.</p>
+                </div>
+
+                <button class="btn btn-primary p-3 ps-5 pe-5" style="font-size: 25px;">Pelajari Lebih Lanjut <i
+                        class="fa-solid fa-angle-right ms-2" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- END DETAIL -->
+
+    <!-- LEARN MORE -->
+    <br>
+    <div class="container-fluid learn-more">
+        <div class="container">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="png/learn-1.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Small & Medium Business</h5>
+                            <p class="card-text">Raih pencapaian baru dengan teknologi bisnis dari ASUS yang meningkatkan
+                                produktivitas dan memungkinkan kerja yang fleksibel, sekaligus menjaga bisnis Anda tetap
+                                aman.</p>
+                            <a href="#" class="btn btn-primary">Learn More <i class="fa-solid fa-angle-right ms-2"
+                                    style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="png/learn-2.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Enterprise</h5>
+                            <p class="card-text">ASUS memungkinkan Anda mempercepat transformasi digital untuk merampingkan
+                                manajemen TI dan meningkatkan keamanan, sehingga Anda dapat mengembangkan bisnis dan
+                                mempertahankan
+                                talenta terbaik di dunia kerja yang modern.</p>
+                            <a href="#" class="btn btn-primary">Learn More <i class="fa-solid fa-angle-right ms-2"
+                                    style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="png/learn-3.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Ciptakan pengalaman belajar terbaik dengan perangkat dan solusi siap pakai
+                                dari
+                                ASUS yang memungkinkan siswa dan pengajar terhubung dengan cara yang inovatif.</p>
+                            <a href="#" class="btn btn-primary">Learn More <i class="fa-solid fa-angle-right ms-2"
+                                    style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LEARN MORE -->
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer-bg text-light">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>About Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About ASUS
+                                Business</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About CSR for
+                                global</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Products</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Laptops</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Desktops</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">NUCs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Monitors</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Projectors</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Servers &
+                                Workstation</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Motherboards</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Graphics Card</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Alot &
+                                Industrial</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Networking</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Cases & Optical
+                                Drives</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Wearables &
+                                Healthcare</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Intelligent
+                                Robots</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Solutions</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Small & Medium
+                                Business</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Enterprise</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Education</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Retail &
+                                Hospitality</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Healthcare</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Manufacturing</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Architecure,
+                                Engineering & Construction</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Media &
+                                Entertainment</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Finance</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Goverment</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END FOOTER -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
